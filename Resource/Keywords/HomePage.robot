@@ -7,4 +7,6 @@ Variables    ../Locators/Locators.py
 Create linkine tikla
     Click Link    ${createAccountLink}
     
+Uyeligi onayla
+    Element Should Be Visible    ${logoutBtn}
     

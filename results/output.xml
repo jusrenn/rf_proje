@@ -1,46 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.11.0 on darwin)" generated="20221226 21:57:26.493" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.1 (Python 3.11.0 on darwin)" generated="20221226 22:52:53.326" rpa="false" schemaversion="3">
 <suite id="s1" name="PROJE" source="/Users/yusufrenkoglu/Desktop/PROJE">
 <suite id="s1-s1" name="Tests" source="/Users/yusufrenkoglu/Desktop/PROJE/Tests">
 <suite id="s1-s1-s1" name="GalaFurniture" source="/Users/yusufrenkoglu/Desktop/PROJE/Tests/GalaFurniture.robot">
-<test id="s1-s1-s1-t1" name="Yeni bir hesap olustur" line="11">
+<test id="s1-s1-s1-t1" name="Yeni bir hesap olustur" line="13">
 <kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221226 21:57:26.710" level="INFO">Opening browser 'chrome' to base url 'https://www.galafurn.com'.</msg>
-<status status="PASS" starttime="20221226 21:57:26.709" endtime="20221226 21:57:30.071"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221226 21:57:30.072" endtime="20221226 21:57:30.558"/>
+<msg timestamp="20221226 22:52:54.183" level="INFO">Opening browser 'chrome' to base url 'https://www.galafurn.com'.</msg>
+<status status="PASS" starttime="20221226 22:52:54.182" endtime="20221226 22:52:57.603"/>
 </kw>
 <kw name="Create linkine tikla" library="HomePage">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${createAccountLink}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20221226 21:57:30.560" level="INFO">Clicking link '(//a[@id='customer_register_link'])[1]'.</msg>
-<status status="PASS" starttime="20221226 21:57:30.559" endtime="20221226 21:57:30.938"/>
+<msg timestamp="20221226 22:52:57.606" level="INFO">Clicking link '(//a[@id='customer_register_link'])[1]'.</msg>
+<status status="PASS" starttime="20221226 22:52:57.605" endtime="20221226 22:52:58.172"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221226 21:57:33.939" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20221226 21:57:30.938" endtime="20221226 21:57:33.940"/>
+<status status="PASS" starttime="20221226 22:52:57.604" endtime="20221226 22:52:58.173"/>
 </kw>
-<status status="PASS" starttime="20221226 21:57:30.559" endtime="20221226 21:57:33.940"/>
+<kw name="Uyelik formunu doldur" library="RegisterPage">
+<kw name="Name" library="FakerLibrary">
+<var>${FLisim}</var>
+<doc>:example 'John Doe'</doc>
+<msg timestamp="20221226 22:52:58.175" level="INFO">${FLisim} = Tim Weber</msg>
+<status status="PASS" starttime="20221226 22:52:58.174" endtime="20221226 22:52:58.176"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${isim}</arg>
+<arg>${FLisim}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221226 22:52:58.177" level="INFO">Typing text 'Tim Weber' into text field '//input[@id='FirstName']'.</msg>
+<status status="PASS" starttime="20221226 22:52:58.176" endtime="20221226 22:52:58.390"/>
+</kw>
+<kw name="Last Name" library="FakerLibrary">
+<var>${FLsoyisim}</var>
+<msg timestamp="20221226 22:52:58.391" level="INFO">${FLsoyisim} = Ball</msg>
+<status status="PASS" starttime="20221226 22:52:58.391" endtime="20221226 22:52:58.391"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${soyisim}</arg>
+<arg>${FLsoyisim}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221226 22:52:58.392" level="INFO">Typing text 'Ball' into text field '//input[@id='LastName']'.</msg>
+<status status="PASS" starttime="20221226 22:52:58.391" endtime="20221226 22:52:58.489"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email}</arg>
+<arg>${emailStr}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221226 22:52:58.490" level="INFO">Typing text 'yusuf.qamail@gmail.com' into text field '//input[@id='Email']'.</msg>
+<status status="PASS" starttime="20221226 22:52:58.489" endtime="20221226 22:52:58.614"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${password}</arg>
+<arg>${passwordStr}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221226 22:52:58.615" level="INFO">Typing password into text field '//input[@id='CreatePassword']'.</msg>
+<msg timestamp="20221226 22:52:58.883" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221226 22:52:59.029" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221226 22:52:58.615" endtime="20221226 22:52:59.029"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${createButonu}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221226 22:52:59.030" level="INFO">Clicking button 'Create'.</msg>
+<status status="PASS" starttime="20221226 22:52:59.030" endtime="20221226 22:52:59.140"/>
+</kw>
+<status status="PASS" starttime="20221226 22:52:58.173" endtime="20221226 22:52:59.141"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221226 21:57:33.941" endtime="20221226 21:57:34.092"/>
+<status status="PASS" starttime="20221226 22:52:59.141" endtime="20221226 22:52:59.295"/>
 </kw>
-<status status="PASS" starttime="20221226 21:57:26.707" endtime="20221226 21:57:34.093"/>
+<status status="PASS" starttime="20221226 22:52:54.181" endtime="20221226 22:52:59.296"/>
 </test>
-<status status="PASS" starttime="20221226 21:57:26.537" endtime="20221226 21:57:34.094"/>
+<status status="PASS" starttime="20221226 22:52:53.358" endtime="20221226 22:52:59.304"/>
 </suite>
-<status status="PASS" starttime="20221226 21:57:26.534" endtime="20221226 21:57:34.097"/>
+<status status="PASS" starttime="20221226 22:52:53.356" endtime="20221226 22:52:59.309"/>
 </suite>
-<status status="PASS" starttime="20221226 21:57:26.502" endtime="20221226 21:57:34.099"/>
+<status status="PASS" starttime="20221226 22:52:53.331" endtime="20221226 22:52:59.313"/>
 </suite>
 <statistics>
 <total>
