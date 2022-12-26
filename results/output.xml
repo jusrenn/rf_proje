@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.0 on darwin)" generated="20221226 21:57:26.493" rpa="false" schemaversion="3">
+<suite id="s1" name="PROJE" source="/Users/yusufrenkoglu/Desktop/PROJE">
+<suite id="s1-s1" name="Tests" source="/Users/yusufrenkoglu/Desktop/PROJE/Tests">
+<suite id="s1-s1-s1" name="GalaFurniture" source="/Users/yusufrenkoglu/Desktop/PROJE/Tests/GalaFurniture.robot">
+<test id="s1-s1-s1-t1" name="Yeni bir hesap olustur" line="11">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221226 21:57:26.710" level="INFO">Opening browser 'chrome' to base url 'https://www.galafurn.com'.</msg>
+<status status="PASS" starttime="20221226 21:57:26.709" endtime="20221226 21:57:30.071"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221226 21:57:30.072" endtime="20221226 21:57:30.558"/>
+</kw>
+<kw name="Create linkine tikla" library="HomePage">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${createAccountLink}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221226 21:57:30.560" level="INFO">Clicking link '(//a[@id='customer_register_link'])[1]'.</msg>
+<status status="PASS" starttime="20221226 21:57:30.559" endtime="20221226 21:57:30.938"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221226 21:57:33.939" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221226 21:57:30.938" endtime="20221226 21:57:33.940"/>
+</kw>
+<status status="PASS" starttime="20221226 21:57:30.559" endtime="20221226 21:57:33.940"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221226 21:57:33.941" endtime="20221226 21:57:34.092"/>
+</kw>
+<status status="PASS" starttime="20221226 21:57:26.707" endtime="20221226 21:57:34.093"/>
+</test>
+<status status="PASS" starttime="20221226 21:57:26.537" endtime="20221226 21:57:34.094"/>
+</suite>
+<status status="PASS" starttime="20221226 21:57:26.534" endtime="20221226 21:57:34.097"/>
+</suite>
+<status status="PASS" starttime="20221226 21:57:26.502" endtime="20221226 21:57:34.099"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="PROJE">PROJE</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">PROJE.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="GalaFurniture">PROJE.Tests.GalaFurniture</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
