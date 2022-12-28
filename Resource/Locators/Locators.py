@@ -1,10 +1,16 @@
 # HomePage Locators
-createAccountLink = "(//a[@id='customer_register_link'])[1]"
-logoutBtn = '.wrapper #customer_logout_link'
+createAccountLink = "(//a[text()='Create account'])[1]"
+logoutBtn = "//*[text()='Log out']"
+loginLink = "//*[text()='Log in']"
 
 # RegisterPage Locators
-isim="//input[@id='FirstName']"
-soyisim="//input[@id='LastName']"
-email="//input[@id='Email']"
-password="//input[@id='CreatePassword']"
-createButonu="Create"
+isim="id=CreateCustomerForm-firstname"
+soyisim="id=CreateCustomerForm-lastname"
+email="id=CreateCustomerForm-email"
+password="id=CreateCustomerForm-password"
+createButonu="//*[@class='button button--cta button--solid']"
+
+# LoginPage Locators
+emailInput = "id=CustomerForm-email"
+passwordInput = "id=CustomerForm-password"
+signUpBtn = "(//button[@class='button button--cta button--solid'])[2]"

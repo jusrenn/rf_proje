@@ -17,3 +17,4 @@ Uyelik formunu doldur
     Input Password    ${password}    ${passwordStr}
 
     Click Button    ${createButonu}
+    Sleep    1

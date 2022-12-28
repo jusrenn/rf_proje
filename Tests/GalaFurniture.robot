@@ -1,4 +1,5 @@
 *** Settings ***
+Documentation    GALA FURNITURE projesi
 Library    SeleniumLibrary
 
 Resource    ../Resource/Keywords/HomePage.robot
@@ -13,4 +14,10 @@ Test Teardown    Close Browser
 Yeni bir hesap olustur
     Create linkine tikla
     Uyelik formunu doldur
-    Uyeligi onayla
+    Logout butonu gorunmeli
+
+Login testi
+    [Documentation]    Aktif bir mail adresi ve sifresi ile giris yap
+    Login linkine tikla
+
+    
