@@ -6,6 +6,7 @@ Resource    ../Resource/Keywords/HomePage.robot
 Resource    ../Resource/Keywords/RegisterPage.robot
 Resource    ../Resource/Keywords/LoginPage.robot
 Resource    ../Resource/Keywords/SearchPage.robot
+Resource    ../Resource/Keywords/ProductPage.robot
 
 Variables    ../Resource/TestData/TestData.py
 
@@ -36,3 +37,7 @@ Pozitif urun arama testi
     Search butonuna tikla
     Room aramasi yapin
     Sonuclarin basariyla gorundugunu kontrol et
+    Urun fiyatlarini kucukten buyuge diz
+    Urunlerin fiyatlarini listele
+    En ucuz urunun detay sayfasina git
+    Urunun basliginin Domina Jar oldugunu teyit et

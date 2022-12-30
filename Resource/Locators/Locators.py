@@ -20,3 +20,10 @@ error = "//li[text()='Incorrect email or password.']"
 
 # SearchPage Locators
 searchResult = "//p[@role='status']"
+fiyatDropbox = "//select[@id='SortBy-template--15826732220569__main']"
+birinciUrun = "(//a[@class='product-card__link absolute inset-0 z-10'])[1]"
+urunFiyatlariLocator = "//span[@class='price-item price-item--sale']"
+urunlerLinkleriLocator = "//li[@class='collection__grid-item']"
+
+# ProductPage Locators
+urunBasligi = "//h1"
