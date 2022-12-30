@@ -12,4 +12,12 @@ Logout butonu gorunmeli
 
 Login linkine tikla
     Click Link    ${loginLink}
-    
+
+Search butonuna tikla
+    Click Button    ${searchBtn}
+    Sleep     1
+
+Room aramasi yapin
+    Input Text    ${searchBoxInput}    room
+    Press Keys    ${searchBoxInput}    ENTER
+    Sleep    2

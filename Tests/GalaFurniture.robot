@@ -5,6 +5,7 @@ Library    SeleniumLibrary
 Resource    ../Resource/Keywords/HomePage.robot
 Resource    ../Resource/Keywords/RegisterPage.robot
 Resource    ../Resource/Keywords/LoginPage.robot
+Resource    ../Resource/Keywords/SearchPage.robot
 
 Variables    ../Resource/TestData/TestData.py
 
@@ -30,3 +31,8 @@ Negatif login testi
     Mail ve sifreyi gir    asdasd@asasd.com    123456
     Sigin butonuna tikla
     Girisin basarisiz oldugunu dogrula
+
+Pozitif urun arama testi
+    Search butonuna tikla
+    Room aramasi yapin
+    Sonuclarin basariyla gorundugunu kontrol et
