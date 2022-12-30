@@ -1,91 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.11.0 on darwin)" generated="20221228 23:42:31.704" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.1 (Python 3.11.0 on darwin)" generated="20221230 21:52:38.684" rpa="false" schemaversion="3">
 <suite id="s1" name="PROJE" source="/Users/yusufrenkoglu/Desktop/PROJE">
 <suite id="s1-s1" name="Tests" source="/Users/yusufrenkoglu/Desktop/PROJE/Tests">
 <suite id="s1-s1-s1" name="GalaFurniture" source="/Users/yusufrenkoglu/Desktop/PROJE/Tests/GalaFurniture.robot">
-<test id="s1-s1-s1-t1" name="Negatif login testi" line="27">
+<test id="s1-s1-s1-t1" name="Login testi" line="20">
 <kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221228 23:42:32.362" level="INFO">Opening browser 'chrome' to base url 'https://www.galafurn.com'.</msg>
-<status status="PASS" starttime="20221228 23:42:32.361" endtime="20221228 23:42:36.442"/>
+<msg timestamp="20221230 21:52:39.359" level="INFO">Opening browser 'chrome' to base url 'https://www.galafurn.com'.</msg>
+<status status="PASS" starttime="20221230 21:52:39.357" endtime="20221230 21:52:44.175"/>
 </kw>
 <kw name="Login linkine tikla" library="HomePage">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${loginLink}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20221228 23:42:36.449" level="INFO">Clicking link '//*[text()='Log in']'.</msg>
-<status status="PASS" starttime="20221228 23:42:36.444" endtime="20221228 23:42:36.953"/>
+<msg timestamp="20221230 21:52:44.177" level="INFO">Clicking link '//*[text()='Log in']'.</msg>
+<status status="PASS" starttime="20221230 21:52:44.177" endtime="20221230 21:52:44.618"/>
 </kw>
-<status status="PASS" starttime="20221228 23:42:36.443" endtime="20221228 23:42:36.953"/>
+<status status="PASS" starttime="20221230 21:52:44.176" endtime="20221230 21:52:44.619"/>
 </kw>
 <kw name="Mail ve sifreyi gir" library="LoginPage">
-<arg>asdasd@asasd.com</arg>
-<arg>123456</arg>
+<arg>${emailStr}</arg>
+<arg>111</arg>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${emailInput}</arg>
 <arg>${mailAdresi}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221228 23:42:36.956" level="INFO">Typing text 'asdasd@asasd.com' into text field 'id=CustomerForm-email'.</msg>
-<status status="PASS" starttime="20221228 23:42:36.954" endtime="20221228 23:42:37.197"/>
+<msg timestamp="20221230 21:52:44.620" level="INFO">Typing text 'ysfrnkgl.qamail@gmail.com' into text field 'id=CustomerForm-email'.</msg>
+<status status="PASS" starttime="20221230 21:52:44.619" endtime="20221230 21:52:44.808"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>${passwordInput}</arg>
 <arg>${sifre}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20221228 23:42:37.198" level="INFO">Typing password into text field 'id=CustomerForm-password'.</msg>
-<msg timestamp="20221228 23:42:37.340" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20221228 23:42:37.615" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20221228 23:42:37.197" endtime="20221228 23:42:37.615"/>
+<msg timestamp="20221230 21:52:44.809" level="INFO">Typing password into text field 'id=CustomerForm-password'.</msg>
+<msg timestamp="20221230 21:52:44.895" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221230 21:52:45.033" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221230 21:52:44.808" endtime="20221230 21:52:45.033"/>
 </kw>
-<status status="PASS" starttime="20221228 23:42:36.954" endtime="20221228 23:42:37.615"/>
+<status status="PASS" starttime="20221230 21:52:44.619" endtime="20221230 21:52:45.033"/>
 </kw>
 <kw name="Sigin butonuna tikla" library="LoginPage">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${signUpBtn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221228 23:42:37.618" level="INFO">Clicking button '(//button[@class='button button--cta button--solid'])[2]'.</msg>
-<status status="PASS" starttime="20221228 23:42:37.618" endtime="20221228 23:42:37.744"/>
+<msg timestamp="20221230 21:52:45.035" level="INFO">Clicking button '(//button[@class='button button--cta button--solid'])[2]'.</msg>
+<status status="PASS" starttime="20221230 21:52:45.035" endtime="20221230 21:52:45.160"/>
 </kw>
-<status status="PASS" starttime="20221228 23:42:37.616" endtime="20221228 23:42:37.744"/>
-</kw>
-<kw name="Girisin basarisiz oldugunu dogrula" library="LoginPage">
 <kw name="Sleep" library="BuiltIn">
-<arg>5</arg>
+<arg>30</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221228 23:42:42.747" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20221228 23:42:37.745" endtime="20221228 23:42:42.747"/>
+<msg timestamp="20221230 21:53:15.161" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20221230 21:52:45.160" endtime="20221230 21:53:15.162"/>
 </kw>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${errorText}</var>
-<arg>${error}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20221228 23:42:43.110" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20221228 23:42:43.110" level="FAIL">Element with locator '//*[text()='Incorrect email or password.']' not found.</msg>
-<status status="FAIL" starttime="20221228 23:42:42.748" endtime="20221228 23:42:43.113"/>
+<status status="PASS" starttime="20221230 21:52:45.034" endtime="20221230 21:53:15.162"/>
 </kw>
-<kw name="Should Be Equal" library="BuiltIn">
-<arg>${errorText}</arg>
-<arg>Incorrect email or password.</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="NOT RUN" starttime="20221228 23:42:43.114" endtime="20221228 23:42:43.114"/>
+<kw name="Logout butonu gorunmeli" library="HomePage">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${logoutBtn}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221230 21:53:15.559" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-25.png"&gt;&lt;img src="selenium-screenshot-25.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221230 21:53:15.560" level="FAIL">Element with locator '//a[text()='Log out']' not found.</msg>
+<status status="FAIL" starttime="20221230 21:53:15.163" endtime="20221230 21:53:15.565"/>
 </kw>
-<status status="FAIL" starttime="20221228 23:42:37.745" endtime="20221228 23:42:43.114"/>
+<status status="FAIL" starttime="20221230 21:53:15.162" endtime="20221230 21:53:15.566"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221228 23:42:43.115" endtime="20221228 23:42:43.273"/>
+<status status="PASS" starttime="20221230 21:53:15.566" endtime="20221230 21:53:15.674"/>
 </kw>
-<doc>Varolmayan bir mail adresi veya hatali bir sifre ile giris yap</doc>
-<status status="FAIL" starttime="20221228 23:42:32.359" endtime="20221228 23:42:43.274">Element with locator '//*[text()='Incorrect email or password.']' not found.</status>
+<doc>Aktif bir mail adresi ve sifresi ile giris yap</doc>
+<status status="FAIL" starttime="20221230 21:52:39.356" endtime="20221230 21:53:15.674">Element with locator '//a[text()='Log out']' not found.</status>
 </test>
 <doc>GALA FURNITURE projesi</doc>
-<status status="FAIL" starttime="20221228 23:42:31.739" endtime="20221228 23:42:43.275"/>
+<status status="FAIL" starttime="20221230 21:52:38.713" endtime="20221230 21:53:15.675"/>
 </suite>
-<status status="FAIL" starttime="20221228 23:42:31.736" endtime="20221228 23:42:43.277"/>
+<status status="FAIL" starttime="20221230 21:52:38.711" endtime="20221230 21:53:15.677"/>
 </suite>
-<status status="FAIL" starttime="20221228 23:42:31.712" endtime="20221228 23:42:43.278"/>
+<status status="FAIL" starttime="20221230 21:52:38.688" endtime="20221230 21:53:15.679"/>
 </suite>
 <statistics>
 <total>

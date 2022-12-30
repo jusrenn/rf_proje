@@ -1,6 +1,6 @@
 # HomePage Locators
 createAccountLink = "(//a[text()='Create account'])[1]"
-logoutBtn = "(//a[@class='header-top__link'])[1]"
+logoutBtn = "//a[text()='Log out']"
 loginLink = "//*[text()='Log in']"
 
 # RegisterPage Locators
@@ -14,4 +14,4 @@ createButonu="//*[@class='button button--cta button--solid']"
 emailInput = "id=CustomerForm-email"
 passwordInput = "id=CustomerForm-password"
 signUpBtn = "(//button[@class='button button--cta button--solid'])[2]"
-error = "//*[text()='Incorrect email or password.']"
+error = "//li[text()='Incorrect email or password.']"

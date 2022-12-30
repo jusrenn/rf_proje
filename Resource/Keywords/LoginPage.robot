@@ -12,7 +12,9 @@ Mail ve sifreyi gir
 
 Sigin butonuna tikla
     Click Button    ${signUpBtn}
+    Sleep    30
 
 Girisin basarisiz oldugunu dogrula
+    Sleep    30
     ${errorText}    Get Text    ${error}
     Should Be Equal    ${errorText}    Incorrect email or password.
