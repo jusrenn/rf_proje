@@ -53,4 +53,4 @@ Negatif urun aramasi testi
     Home Office sekmesinden Desk'e tikla
     Desk sayfasinda oldugunu onayla
     Fiyat araligi belirle
-    #Sonuclari konsola yazdir
+    Urunlerin isimlerini konsola yazdir

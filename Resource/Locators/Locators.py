@@ -33,3 +33,4 @@ urunBasligi = "//h1"
 # CategoryPage Locators
 priceSekmesi = "(//span[@class='filter-group-summary__label'])[3]"
 maxFiyatInput = "//input[@name='filter.v.price.lte']"
+urunBasliklari = "//div[@class='product-card__title group-hover:text-primary-accent']"
