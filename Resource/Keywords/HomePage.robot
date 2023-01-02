@@ -17,7 +17,8 @@ Search butonuna tikla
     Click Button    ${searchBtn}
     Sleep     1
 
-Room aramasi yapin
-    Input Text    ${searchBoxInput}    room
+Urun aramasi yap
+    [Arguments]    ${aranacakKelime}
+    Input Text    ${searchBoxInput}    ${aranacakKelime}
     Press Keys    ${searchBoxInput}    ENTER
     Sleep    2

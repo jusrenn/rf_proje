@@ -4,6 +4,7 @@ Library    SeleniumLibrary
 Variables    ../Locators/Locators.py
 
 *** Keywords ***
-Urunun basliginin Domina Jar oldugunu teyit et
+Urunun basliginin ayni oldugunu kontrol et
+    [Arguments]    ${enUcuzUrununBasligi}
     ${urunBasligiText}    Get Text    ${urunBasligi}
-    Should Contain    ${urunBasligiText}    Domina Jar
+    Should Contain    ${urunBasligiText}    ${enUcuzUrununBasligi}

@@ -35,9 +35,9 @@ Negatif login testi
 
 Pozitif urun arama testi
     Search butonuna tikla
-    Room aramasi yapin
+    Urun aramasi yap    room
     Sonuclarin basariyla gorundugunu kontrol et
     Urun fiyatlarini kucukten buyuge diz
-    Urunlerin fiyatlarini listele
+    Urunlerin fiyatlarini konsola yaz
     En ucuz urunun detay sayfasina git
-    Urunun basliginin Domina Jar oldugunu teyit et
+    Urunun basliginin ayni oldugunu kontrol et    Domina Jar

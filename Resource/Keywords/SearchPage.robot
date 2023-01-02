@@ -1,19 +1,20 @@
 *** Settings ***
 Library    SeleniumLibrary
-Library    Collections
+Library    String
 
 Variables    ../Locators/Locators.py
 
 *** Keywords ***
 Sonuclarin basariyla gorundugunu kontrol et
     ${resultText}    Get Text    ${searchResult}
-    Should Contain    ${resultText}    room
-    
+    ${strArray}    Split String    ${resultText}
+    Should Be True    ${strArray}[0]>0
+
 Urun fiyatlarini kucukten buyuge diz
     Select From List By Value    ${fiyatDropbox}    price-ascending
     Sleep    2
 
-Urunlerin fiyatlarini listele
+Urunlerin fiyatlarini konsola yaz
     # Liste elemanlarini $ ile veya @ ile tanimlayabilirim
     @{urunListesi}    Get WebElements    ${urunFiyatlariLocator}
     
@@ -27,4 +28,3 @@ En ucuz urunun detay sayfasina git
     @{urunLinkleri}    Get WebElements    ${urunlerLinkleriLocator}
     Click Link    ${urunLinkleri}[0]
     Sleep    1
-    
