@@ -22,3 +22,9 @@ Urun aramasi yap
     Input Text    ${searchBoxInput}    ${aranacakKelime}
     Press Keys    ${searchBoxInput}    ENTER
     Sleep    2
+
+Home Office Hower Over
+    Mouse Over    ${homeofficeLocator}
+
+Home Office sekmesinden Desk'e tikla
+    Click Link    ${deskLocator}

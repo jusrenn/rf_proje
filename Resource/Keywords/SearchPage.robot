@@ -28,3 +28,7 @@ En ucuz urunun detay sayfasina git
     @{urunLinkleri}    Get WebElements    ${urunlerLinkleriLocator}
     Click Link    ${urunLinkleri}[0]
     Sleep    1
+
+Hic sonuc bulunmadigini kontrol et
+    ${resultText}    Get Text    ${searchResult}
+    Should Contain    ${resultText}    No results
