@@ -8,11 +8,13 @@ Resource    ../Resource/Keywords/LoginPage.robot
 Resource    ../Resource/Keywords/SearchPage.robot
 Resource    ../Resource/Keywords/ProductPage.robot
 Resource    ../Resource/Keywords/CategoryPage.robot
+Resource    ../Resource/Keywords/CartPage.robot
 
 Variables    ../Resource/TestData/TestData.py
 
 Test Setup    Open Browser    ${URL}    ${BROWSER}
 Test Teardown    Close Browser
+
 
 *** Test Cases ***
 Yeni bir hesap olustur
@@ -54,3 +56,10 @@ Negatif urun aramasi testi
     Desk sayfasinda oldugunu onayla
     Fiyat araligi belirle
     Urunlerin isimlerini konsola yazdir
+
+Sepete urun ekle ve sepetteki urunleri sil
+    Living Room Set kategorisinden ilk urune tikla
+    Add to Cart butonuna tikla
+    View my cart butonuna tikla
+    Remove butonuna tikla
+    Sepetin bos oldugunu teyit et

@@ -6,6 +6,7 @@ searchBtn = "//button[@aria-controls='SearchBar-header-top']"
 searchBoxInput = "(//input[@id='SearchBarInput-header-top'])[1]"
 homeofficeLocator = "(//div[@class='header-menu__summary-container'])[6]"
 deskLocator="(//a[@href='/collections/desk'])[2]"
+LivingRoomSetIlkUrun = "//ul[@id='splide02-list']/li[9]"
 
 # RegisterPage Locators
 isim="id=CreateCustomerForm-firstname"
@@ -29,8 +30,14 @@ urunlerLinkleriLocator = "//li[@class='collection__grid-item']"
 
 # ProductPage Locators
 urunBasligi = "//h1"
+addToCartBtn = "name=add"
+cartLink = "//a[@class='cart-notification__cart']"
 
 # CategoryPage Locators
 priceSekmesi = "(//span[@class='filter-group-summary__label'])[3]"
 maxFiyatInput = "//input[@name='filter.v.price.lte']"
 urunBasliklari = "//div[@class='product-card__title group-hover:text-primary-accent']"
+
+# CartPage Locators
+removeLink = "//a[@class='underline text-primary-text-80 font-navigation text-xs inline-block']"
+emptyCart = "//p[@class='cart-items__empty-text']"

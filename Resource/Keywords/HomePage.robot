@@ -28,3 +28,6 @@ Home Office Hower Over
 
 Home Office sekmesinden Desk'e tikla
     Click Link    ${deskLocator}
+
+Living Room Set kategorisinden ilk urune tikla
+    Click Element    ${LivingRoomSetIlkUrun}
