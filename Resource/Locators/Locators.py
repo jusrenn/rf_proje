@@ -9,6 +9,7 @@ deskLocator="(//a[@href='/collections/desk'])[2]"
 LivingRoomSetIlkUrun = "//ul[@id='splide02-list']/li[9]"
 haberBulteniInput = "id=Email-footer-newsletter-section"
 haberBulteniDogrulama = "//p[text()='Thanks for subscribing']"
+adres = "//a[text()='11818 Harry Hines Blvd #216, Farmer Branch, TX 75234']"
 
 # RegisterPage Locators
 isim="id=CreateCustomerForm-firstname"
@@ -43,3 +44,6 @@ urunBasliklari = "//div[@class='product-card__title group-hover:text-primary-acc
 # CartPage Locators
 removeLink = "//a[@class='underline text-primary-text-80 font-navigation text-xs inline-block']"
 emptyCart = "//p[@class='cart-items__empty-text']"
+
+# GooglePage Locators
+googleCookieBtn = "(//button[@class='VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-k8QpJ VfPpkd-LgbsSe-OWXEXe-dgl2Hf nCP5yc AjY5Oe DuMIQc LQeN7 Nc7WLe'])[2]"

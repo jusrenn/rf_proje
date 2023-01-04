@@ -77,3 +77,8 @@ Custom Library testi
     Log To Console    Sonuc: ${sonuc}
     ${rastgeleSayi}    Rastgele Sayi    10    50
     Log To Console    ${rastgeleSayi}
+
+Adresin dogrulu kontrol
+    Sayfanin en altina git
+    Adrese tikla
+    Acilan sayfanin google maps oldugunu kontrol et

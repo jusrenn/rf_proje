@@ -1,5 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    ../../Library/ilkKutuphanem.py
 
 Variables    ../Locators/Locators.py
 Variables    ../TestData/TestData.py
@@ -44,3 +45,14 @@ Email adresini gir
 Haber bultenine kayit oldugunu dogrula
     ${haberBulteniText}    Get Text    ${haberBulteniDogrulama}
     Should Contain    ${haberBulteniText}    Thanks
+
+Adrese tikla
+    Click Link    ${adres}
+    Sleep    2
+
+Acilan sayfanin google maps oldugunu kontrol et
+    ${sonucBool}    Run Keyword And Return Status    Element Should Be Visible    ${googleCookieBtn}
+    Run Keyword If    ${sonucBool}    Click Button    ${googleCookieBtn}
+
+    ${googleURL}    Get Location
+    Should Contain    ${googleURL}    google
