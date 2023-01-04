@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation    GALA FURNITURE projesi
 Library    SeleniumLibrary
+Library    ../Library/ilkKutuphanem.py
 
 Resource    ../Resource/Keywords/HomePage.robot
 Resource    ../Resource/Keywords/RegisterPage.robot
@@ -9,6 +10,8 @@ Resource    ../Resource/Keywords/SearchPage.robot
 Resource    ../Resource/Keywords/ProductPage.robot
 Resource    ../Resource/Keywords/CategoryPage.robot
 Resource    ../Resource/Keywords/CartPage.robot
+
+
 
 Variables    ../Resource/TestData/TestData.py
 
@@ -68,3 +71,9 @@ Haber bultenine kayit ol
     Sayfanin en altina git
     Email adresini gir
     Haber bultenine kayit oldugunu dogrula
+
+Custom Library testi
+    ${sonuc}    Topla    5    2
+    Log To Console    Sonuc: ${sonuc}
+    ${rastgeleSayi}    Rastgele Sayi    10    50
+    Log To Console    ${rastgeleSayi}
