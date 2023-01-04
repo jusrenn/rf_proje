@@ -7,6 +7,8 @@ searchBoxInput = "(//input[@id='SearchBarInput-header-top'])[1]"
 homeofficeLocator = "(//div[@class='header-menu__summary-container'])[6]"
 deskLocator="(//a[@href='/collections/desk'])[2]"
 LivingRoomSetIlkUrun = "//ul[@id='splide02-list']/li[9]"
+haberBulteniInput = "id=Email-footer-newsletter-section"
+haberBulteniDogrulama = "//p[text()='Thanks for subscribing']"
 
 # RegisterPage Locators
 isim="id=CreateCustomerForm-firstname"

@@ -63,3 +63,8 @@ Sepete urun ekle ve sepetteki urunleri sil
     View my cart butonuna tikla
     Remove butonuna tikla
     Sepetin bos oldugunu teyit et
+
+Haber bultenine kayit ol
+    Sayfanin en altina git
+    Email adresini gir
+    Haber bultenine kayit oldugunu dogrula
